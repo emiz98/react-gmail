@@ -1,6 +1,7 @@
 import {
   Apps,
-  ArrowDropDown,
+  FilterList,
+  HelpOutlineOutlined,
   Menu,
   Notifications,
   Search,
@@ -15,14 +16,22 @@ const Header = () => {
         <IconButton>
           <Menu />
         </IconButton>
-        <img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Emblem.png" />
+        <img
+          src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Emblem.png"
+          alt="gmail"
+        />
       </div>
       <div className="header_middle">
         <Search />
         <input type="text" placeholder="Search mail" />
-        <ArrowDropDown className="header_middle_icon" />
+        <IconButton>
+          <FilterList className="header_middle_icon" />
+        </IconButton>
       </div>
       <div className="header_right">
+        <IconButton>
+          <HelpOutlineOutlined />
+        </IconButton>
         <IconButton>
           <Apps />
         </IconButton>
