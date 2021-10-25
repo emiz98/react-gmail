@@ -1,0 +1,51 @@
+.emailSingle {
+  flex: 1;
+  background-color: whitesmoke;
+}
+.mail_tools {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.mail_toolsLeft {
+  display: flex;
+}
+
+.mail_body {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  background-color: white;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 0 5px 7px 0 rgb(204, 204, 204);
+}
+.mail_body_header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+  padding: 20px;
+  position: relative;
+}
+.mail_body_header > h2 {
+  font-weight: 400;
+  margin-right: 20px;
+}
+.mail_important {
+  color: rgb(255, 187, 0) !important;
+}
+.mail_body_header > p {
+  margin-left: 20px;
+}
+.mail_time {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  font-size: 12px;
+  color: gray;
+}
+.mail_body_message > p {
+  padding: 10px;
+  margin-right: 20px;
+  overflow-wrap: break-word;
+}

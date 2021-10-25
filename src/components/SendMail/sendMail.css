@@ -1,0 +1,109 @@
+.sendMail {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  background-color: rgb(231, 231, 231);
+  width: 70%;
+  height: 65%;
+  max-width: 500px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid whitesmoke;
+  box-shadow: 0 5px 7px 0 rgb(199, 199, 199);
+  display: none;
+}
+.sendMail_header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(61, 61, 61);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: whitesmoke;
+}
+.sendMail_header:hover {
+  cursor: pointer;
+}
+.sendMail_header > h3 {
+  font-size: 14px;
+}
+.sendMail_header .MuiSvgIcon-root {
+  font-size: 16px;
+  padding: 8px;
+  color: gray;
+}
+.sendMail_header .MuiSvgIcon-root:hover {
+  background-color: rgb(105, 105, 105);
+  color: white;
+  border-radius: 5px;
+}
+.sendMail_send {
+  color: whitesmoke !important;
+  background-color: rgb(0, 98, 255) !important;
+  text-transform: capitalize !important;
+  margin: 15px !important;
+}
+.sendMail_send .MuiSvgIcon-root {
+  margin-left: 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.287);
+}
+
+.sendMail > form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.sendMail > form > input {
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid whitesmoke;
+  outline: none;
+}
+.sendMail_message {
+  border: none;
+  padding: 10px;
+  flex: 1;
+  resize: none;
+}
+.sendMail_message:focus {
+  outline: none;
+}
+
+.sendMailOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-top: 1px solid whitesmoke;
+}
+
+.sendMailOptions_left {
+  display: flex;
+  flex: 0.9;
+  color: rgb(112, 112, 112);
+}
+.sendMailOptions_right {
+  display: flex;
+  flex: 0.1;
+  margin-right: 10px;
+  color: rgb(112, 112, 112);
+}
+.sendMailOptions_left .MuiSvgIcon-root {
+  padding: 5px;
+  font-size: 20px;
+}
+.sendMailOptions_right .MuiSvgIcon-root {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.sendMailOptions .MuiSvgIcon-root:hover {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}

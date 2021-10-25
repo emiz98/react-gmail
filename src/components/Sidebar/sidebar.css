@@ -1,10 +1,12 @@
 .sidebar {
-  flex: 0.3;
+  flex: 0;
   max-width: 300px;
   padding-right: 20px;
+  transition: 0.3s ease-in-out;
 }
 
 .sidebar_compose {
+  height: 55px;
   margin-top: 50px !important;
   margin-left: 10px !important;
   margin-bottom: 15px !important;
@@ -18,4 +20,24 @@
 .sidebar_footer {
   display: flex;
   justify-content: center;
+  margin: 8px;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+}
+.addButton:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+.addButton > span {
+  font-weight: 600;
+}
+.sidebar_scroller {
+  height: 35%;
+  overflow-y: hidden;
+}
+.sidebar_scroller:hover {
+  overflow-y: hidden;
 }

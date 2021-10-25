@@ -37,3 +37,6 @@
   font-weight: 400;
   color: rgb(119, 119, 119);
 }
+.imp {
+  color: rgb(255, 208, 0) !important;
+}

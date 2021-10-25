@@ -13,9 +13,11 @@ import {
 import { Checkbox, IconButton } from "@mui/material";
 import EmailRow from "../../components/EmailRow/EmailRow";
 import Section from "../../components/Section/Section";
+import response from "./response";
 import "./emailList.css";
 
 const EmailList = () => {
+  const testDatas = response;
   return (
     <div className="emailList">
       <div className="emailList_header">
@@ -52,12 +54,15 @@ const EmailList = () => {
         <Section Icon={LocalOffer} title="Promotions" color="green" />
       </div>
       <div className="emailList_list">
-        <EmailRow
-          title="Twitch"
-          subject="Subject"
-          description="Description"
-          time="11.34 P.M."
-        />
+        {testDatas.inbox.map((testData) => (
+          <EmailRow
+            title={testData.title}
+            subject={testData.subject}
+            description={testData.description}
+            time={testData.time}
+            important={testData.important}
+          />
+        ))}
       </div>
     </div>
   );
