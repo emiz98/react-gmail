@@ -11,7 +11,6 @@ import {
   Label,
   LabelImportant,
   Mail,
-  NearMe,
   Note,
   Person,
   Phone,
@@ -20,7 +19,7 @@ import {
   Settings,
   Star,
 } from "@mui/icons-material";
-import { Button, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import SidebarOption from "../SidebarOption/SidebarOption";
 import $ from "jquery";
 import "./sidebar.css";

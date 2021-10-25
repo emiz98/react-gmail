@@ -16,7 +16,7 @@ import {
   OpenInFull,
 } from "@mui/icons-material";
 import { Button } from "@mui/material";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import $ from "jquery";
 import "./sendMail.css";
 
