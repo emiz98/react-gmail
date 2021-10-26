@@ -1,9 +1,48 @@
 .app {
-  height: 100vh;
+  height: 92vh;
   overflow: hidden;
 }
 
 .app_body {
   display: flex;
   height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .header_middle {
+    display: none !important;
+  }
+  .emailList_header_right .MuiButtonBase-root {
+    display: none;
+  }
+  .emailList_header_right .MuiButtonBase-root:last-child {
+    display: flex;
+  }
+
+  .emailList_sections {
+    overflow-x: scroll !important;
+  }
+  .emailList_sections::-webkit-scrollbar {
+    display: none;
+  }
+  .emailList_sections .section {
+    min-width: 70px !important;
+  }
+  .emailList_sections .section > h4 {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  .emailList_sections .section .MuiSvgIcon-root {
+    font-size: 15px;
+  }
+  .emailRow {
+    justify-content: space-between;
+  }
+  .emailRow_message {
+    display: none !important;
+  }
+
+  .sendMailOptions_left {
+    display: none !important;
+  }
 }
